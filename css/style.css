@@ -1,0 +1,148 @@
+/* Set the background color, text color, and font family for the entire page */
+body {
+  background-color: #f29492;
+  color: #114357;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Defince the progress bar container and its properties */
+#myProgress {
+  width: 420px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Defince the progress bar and its properties */
+#myBar {
+  width: 0%;
+  height: 5px;
+  background-color: #114357;
+  border-radius: 10px;
+}
+
+/* Set the fill color for the logo */
+.logo {
+  fill: red;
+}
+
+/* Defince the style for action buttons */
+.btn-action {
+  cursor: pointer;
+  padding-top: 10px;
+  width: 30px;
+}
+
+/* Defince the display style for button and info containers */
+.btn-ctn,
+.infos-ctn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Defince the style for info container */
+.infos-ctn {
+  padding-top: 20px;
+}
+
+/* Set the padding, margin, and color for buttons */
+.btn-ctn > div {
+  padding: 5px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+/* Set the margin, width, and color for info container elements */
+.infos-ctn > div {
+  margin-bottom: 8px;
+  color: #114357;
+}
+
+/* Set the margin for the first button */
+.first-btn {
+  margin-left: 3px;
+}
+
+/* Set the margin for the duration display */
+.duration {
+  margin-left: 10px;
+}
+
+/* Defince the style for the track title */
+.title {
+  margin-left: 10px;
+  width: 210px;
+  text-align: center;
+}
+
+/* Defince the properties for the player container */
+.player-ctn {
+  border-radius: 15px;
+  width: 420px;
+  padding: 10px;
+  background-color: #f4f3f6;
+  margin: auto;
+  margin-top: 100px;
+  box-shadow: 1px 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* Defince the style for a playlist track container */
+.playlist-track-ctn {
+  display: flex;
+  background-color: #e4e4e4;
+  margin-top: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Defince the margin for a playlist track container */
+.playlist-track-ctn > div {
+  margin: 10px;
+}
+
+/* Defince the style for the track info container */
+.playlist-info-track {
+  width: 80%;
+}
+
+/* Defince the style for the track info and duration */
+.playlist-info-track,
+.playlist-duration {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  color: #114357;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+/* Defince the padding for the playlist container */
+.playlist-ctn {
+  padding-bottom: 20px;
+}
+
+/* Defince the style for the currently active track */
+.active-track {
+  background: #fff;
+  color: #114357 !important;
+  font-weight: bold;
+}
+
+/* Defince the style for active track elements */
+.active-track > .playlist-info-track,
+.active-track > .playlist-duration,
+.active-track > .playlist-btn-play {
+  color: #114357 !important;
+}
+/*  Disable pointer events and set padding top and bottom. */
+.playlist-btn-play {
+  pointer-events: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*  Set color and font size. */
+.fas {
+  color: #114357;
+  font-size: 20px;
+}

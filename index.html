@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Harmony Player</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- HTML audio player element -->
+    <audio id="myAudio" ontimeupdate="onTimeUpdate()">
+      <!-- Audio source -->
+      <source id="source-audio" src="" type="audio/mpeg" />
+      <!-- Fallback message -->
+      Your browser does not support the audio element.
+    </audio>
+    <!-- Player container -->
+    <div class="player-ctn">
+      <!-- Player information container -->
+      <div class="infos-ctn">
+        <!-- Current time -->
+        <div class="timer">00:00</div>
+        <!-- Song title -->
+        <div class="title"></div>
+        <!-- Song duration -->
+        <div class="duration">00:00</div>
+      </div>
+      <!-- Progress bar container -->
+      <div id="myProgress">
+        <!-- Progress bar -->
+        <div id="myBar"></div>
+      </div>
+      <!-- Player buttons container -->
+      <div class="btn-ctn">
+        <!-- Previous button -->
+        <div class="btn-action first-btn" onclick="previous()">
+          <div id="btn-faws-back">
+            <i class="fas fa-step-backward"></i>
+          </div>
+        </div>
+        <!-- Rewind button -->
+        <div class="btn-action" onclick="rewind()">
+          <div id="btn-faws-rewind">
+            <i class="fas fa-backward"></i>
+          </div>
+        </div>
+        <!-- Play/Pause button -->
+        <div class="btn-action" onclick="toggleAudio()">
+          <div id="btn-faws-play-pause">
+            <i class="fas fa-play" id="icon-play"></i>
+            <i class="fas fa-pause" id="icon-pause" style="display: none"></i>
+          </div>
+        </div>
+        <!-- Forward button -->
+        <div class="btn-play" onclick="forward()">
+          <div id="btn-faws-forward">
+            <i class="fas fa-forward"></i>
+          </div>
+        </div>
+        <!-- Next button -->
+        <div class="btn-action" onclick="next()">
+          <div id="btn-faws-next">
+            <i class="fas fa-step-forward"></i>
+          </div>
+        </div>
+        <!-- Mute button -->
+        <div class="btn-mute" id="toggleMute" onclick="toggleMute()">
+          <div id="btn-faws-volume">
+            <i id="icon-vol-up" class="fas fa-volume-up"></i>
+            <i
+              id="icon-vol-mute"
+              class="fas fa-volume-mute"
+              style="display: none"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- Playlist container -->
+      <div class="playlist-ctn"></div>
+    </div>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/a062562745.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
